@@ -1,0 +1,1021 @@
+*{
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Noto Serif',sans-serif;
+    line-height: 1.8;
+    flex-wrap: wrap;
+    
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+}
+span{
+    display:inline-block ;
+}
+iframe{
+    overflow: hidden;
+}
+html,body{
+   
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    
+ }
+ 
+ .container{
+     width:1170px;
+     margin: auto;
+     overflow: hidden;
+    
+ }
+
+ /* start navbar css */
+ nav{
+     overflow: hidden;
+ }
+ nav .container{
+     padding: 20px 0;
+     display: grid;
+     grid-template-columns:25% 55% 20%;
+     /* display: flex; */
+     
+ }
+ nav .container ul{
+     list-style: none;
+     display: flex;
+     column-gap: 25px;
+     font-size: 21px;
+     margin: 39px 0 0 0;
+     overflow: hidden;
+ }
+ nav .container ul a{
+     text-decoration: none;
+     color: black;
+ }
+ nav .container ul a:hover{
+     color:rgb(128,127,131);
+ }
+ nav .container div i{
+     display: none;
+ }
+ /* start ads button */
+ .button a{
+    display: block;
+    background-color: #73d315;
+    padding: 8px 20px;
+    font-size: 21px;
+    margin: 33px 0 0 0;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+ }
+ .button a:hover{
+      color: black;
+ }
+ /*end  ads button */
+ /* end navbar css */
+ /* start banner section  css*/
+ .banner{
+     background-image: url('../images/banner.png');
+     background-size: cover;
+     text-align: center;
+     padding:50px 0 100px;
+     overflow: hidden;
+
+ }
+ .banner .container h1,#about .container h1{
+     color:white;
+     font-size: 59px;
+     font-weight: 500;
+     text-transform: capitalize;
+     margin-bottom: 0;
+     overflow: hidden;
+
+ }
+ .banner .container p{
+     color:#c9c9c9;
+     font-size: 19px;
+     overflow: hidden;
+ }
+ .banner .container button{
+    color: white;
+    text-transform: capitalize;
+    background-color: #73d315;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    margin:50px auto 100px;
+    overflow: hidden;
+ }
+ /* end banner section css */
+ /* Start search box css */
+ .search_box {
+    position: relative;
+    top:-125px;
+}
+ .search_box .container{
+    padding:30px;
+    height: 250px;
+     background-color: white;
+     box-shadow: 0px 0px 15px 2px #494949;
+ }
+ .search_box input[type="text"]{
+    padding: 10px;
+    width: 245px;
+    font-size: 20px;
+    border:1px solid #4ebd4e;
+    margin-right: 30px;
+    color: rgb(127,125,125);
+    overflow: hidden;
+ }
+ .search_box input[type="button"]{
+    background-color: #73d315;
+    height: 50px;
+    width: 220px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    overflow: hidden;
+ }
+ .search_box ul{
+     display: flex;
+     column-gap: 35px;
+     padding: 0;
+     margin: 60px 0;
+     flex-wrap: wrap;
+     overflow: hidden;
+
+ }
+ .search_box ul li a{
+     text-decoration: none;
+     color:rgb(102, 102, 102);
+     font-size: 20px;
+     padding: 12px;
+     overflow: hidden;
+
+ }
+ .search_box ul li:first-child a{
+    background-color: black;
+}
+ .search_box ul li a:hover{
+     background-color: black;
+     color: white;
+ }
+ /* end search box css */
+
+ /* start browse ads css  */
+ #browse_ads{
+    background-color: #e6e6e6;
+    overflow: hidden;
+    text-align: center;
+    overflow: hidden;
+ }
+ #browse_ads .container .ads{
+     display: flex;
+    flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     column-gap: 30px;
+     overflow: hidden;
+ }
+ #browse_ads .container h1,.stores .container h1, #clients .container h1{
+     text-transform: uppercase;
+     color: black;
+     margin: 30px;
+     /* text-align: center; */
+     font-size: 58px;
+     font-weight: 500;
+     overflow: hidden;
+
+ }
+ #browse_ads .container h1 span,.stores .container h1 span, 
+ #clients .container h1 span{
+     border-bottom: 4px solid #73d315;
+     display: inline;
+     overflow: hidden;
+
+ }
+  #browse_ads .container .ads div{
+      text-align: center;
+     overflow: hidden;
+
+  }
+  #browse_ads .container .ads div .promoted{
+    position: relative;
+    top: -40px;
+    margin: auto;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 8px 55px;
+    font-size: 20px;
+    display: block;
+    overflow: hidden;
+
+}
+  #browse_ads .container .ads div img[alt="eye"]{
+      margin: 4px 0;
+      
+  }
+  #browse_ads .container .ads div span{
+      margin: -20px 10px;
+     overflow: hidden;
+
+  }
+  #browse_ads .container .ads div button:last-of-type,
+   .stores .container .details button{
+      margin: 20px auto;
+      padding: 5px 40px;
+      display: block;
+      background-color: rgb(66, 182, 37);
+      font-size: 20px;
+     overflow: hidden;
+
+  }
+  #browse_ads .container .ads div button:last-of-type a,
+  .stores .container .details button a{
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+  }
+
+  #browse_ads .container .ads div button:last-of-type a:hover,
+  .stores .container .details button a:hover{
+      color:black;
+  }
+ /* end browse ads css  */
+
+ /* start popular stores css */
+ .stores .container h1{
+     margin: 30px 0;
+     overflow: hidden;
+
+ }
+ .stores .container .details {
+    text-align: center;
+    margin: 100px auto;
+    width: 535px;
+ }
+.stores .container .details img{
+    border-radius: 10px;
+}
+
+.stores .container .details h2{
+    color: #40db19;
+    font-weight: 600;
+    font-size: 30px;
+    overflow: hidden;
+
+}
+.stores .container .details p{
+    width: 400px;
+    word-wrap: break-word;
+    font-weight: 600;
+    margin:auto ;
+    overflow: hidden;
+
+
+}
+button:hover{
+    color:black;
+}
+ /* end popular stores css */
+
+ /* start about css */
+ #about{
+     overflow: hidden;
+     background-image: url('../images/about-banner.png');
+     background-size: cover;
+     color: white;
+     text-align: center;
+     padding: 110px 0;
+ }
+ #about .container h1{
+     border-bottom: 4px solid rgb(35, 204, 35);
+     width: 60%;
+    margin: auto;
+     
+ }
+ #about .container p{
+     font-size: 18px;
+     margin:35px 0 50px;
+     white-space: break-spaces;
+ }
+ /* end about css */
+ /* start clients review  */
+ #clients .container h1 {
+    text-align: center;
+    margin-bottom: 100px;
+ }
+ #clients .container div{
+     text-align: center;
+ }
+ #clients .container div h2 {
+    font-size: 37px;
+    font-weight: 500;
+    margin-top: 0;
+ }
+ #clients .container div span{
+     color:rgb(21, 206, 21);
+     font-weight: 600;
+     font-size: 20px;
+ }
+ #clients .container div p{
+     width: 70%;
+     font-size: 17.5px;
+     font-weight: 500;
+     text-align: center;
+     margin:auto;
+ }
+ #clients .container div .line{
+    background-color: green;
+    width:10px;
+    height: 5px;
+    text-align: center;
+ }
+ /* end clients review  */
+
+ /* start contact css */
+#contact{
+    background-color: black;
+    padding:50px 0;
+}
+#contact .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#contact .container form input,#contact .container form textarea{
+    display: block;
+    width: 400px;
+    font-size: 20px;
+    margin:25px 0;
+    padding: 10px;
+}
+ /* end  contact css */
+
+ /* start footer */
+ footer{
+     background-color: rgb(32, 32, 32);
+     overflow: hidden;
+     color:white;
+ }
+ footer .container{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     margin: 40px auto;
+ }
+ footer .container div:first-child p{
+     line-height: 3;
+     margin: 20px;
+ }
+ footer .container ul li{
+     line-height: 2.6;
+ }
+ footer .container div h2{
+     text-transform: capitalize;
+     border-bottom: 2px solid rgb(17, 165, 17);
+     font-weight: 500;
+     font-size: 30px;
+     width: 170px;
+     margin: 10px 40px 20px 0;
+ }
+ footer .container div:nth-of-type(3) h2{
+     width: 230px;
+ }
+ footer .container div input,button{
+     display: block;
+ }
+ footer .container div input{
+    padding-left:10px;
+    font-size: 20px;
+    border-radius: 7px;
+ }
+ footer .container div button{
+     background-color: rgb(2, 150, 2);
+     border-radius: 7px;
+     color:white;
+     font-size: 20px;
+     padding:5px 35px;
+     margin:30px 0;
+
+ }
+ .copy-right{
+     background-color: green;
+     text-align: center;
+     padding:20px 0;
+ }
+ /* end footer */
+
+ /* start media query */
+
+
+  /* X-Large devices (large desktops, 1200px and up) */
+ @media (max-width: 1200px) and (min-width:992.1px) { 
+    .container {
+        max-width: 960px;
+    }
+    .search_box .container{
+       width: 900px;
+     }
+     .search_box input[type="text"]{
+        padding: 10px;
+        width: 180px;
+     }
+     .search_box input[type="button"]{
+        width: 180px;
+     }
+     .search_box ul{
+         column-gap: 5px;
+         flex-wrap: wrap;
+    
+     }
+     .search_box ul li a{
+         padding: 11px;
+     }
+     .banner .container h1,#about .container h1{
+         font-size: 40px;
+     }
+     #about .container p {
+        margin: 35px 58px 50px;
+     }
+     #contact .container form input, #contact .container form textarea {
+    margin: 25px 20px;
+    width: 400px;
+     }
+     #contact iframe{
+        width: 450px;
+        height: 400px;
+  }
+}
+
+ /* Large devices (desktops, 992px and up) */  
+@media (max-width: 992px){  
+.container{
+    max-width:858px;
+    margin: auto;
+    overflow: hidden;
+   
+}
+/* start navbar css */
+
+nav .container .logo img{
+    width: 100%;
+}
+nav .container{
+    grid-template-columns: 25% 54% 21%;
+}
+nav .container ul{
+    list-style: none;
+    display: flex;
+    column-gap: 25px;
+    font-size: 21px;
+    margin: 39px 0 0 0;
+    overflow: hidden;
+}
+nav .container ul {
+    font-size: 17px;
+    padding: 0;
+    margin-left: 36px;
+}
+
+nav .container div i{
+    display: none;
+}
+
+
+/* end navbar css */
+/* start banner section  css*/
+.banner{
+    overflow: hidden;
+}
+.banner .container h1{
+    font-size: 45px;
+}
+.banner .container button{
+   margin:20px auto;
+}
+/* end banner section css */
+/* Start search box css */
+.search_box {
+   position: relative;
+   top:-70px;
+}
+.search_box .container{
+   width: 775px;
+   height: auto;
+}
+.search_box input[type="text"]{
+   width: 150px;
+}
+.search_box input[type="button"]{
+    width:150px;
+   height: 55px;
+}
+.search_box ul{
+    display:none;
+
+}
+
+/* end search box css */
+
+/* start browse ads css  */
+#browse_ads .container h1,.stores .container h1, #clients .container h1{
+    font-size: 50px;
+}
+#browse_ads .container .ads div img[alt="product"]{
+    width:350px;
+ }
+
+ #browse_ads .container .ads div .promoted{
+    padding: 8px 90px;
+ }
+/* end browse ads css  */
+
+/* start popular stores css */
+.stores .container h1{
+    margin: 30px 10px;
+}
+.stores .container .details {
+   margin: 15px;
+   width: auto;
+}
+.stores .container .details img{
+  width:75%;
+}
+
+.stores .container .details h2{
+   font-weight: 500;
+   margin: 0px;
+   font-size: 45px;
+}
+.stores .container .details p{
+   font-size: 17px;
+   width: 80%;
+}
+.stores .container .details button{
+padding: 5px 50px;
+}
+/* end popular stores css */
+
+/* start about css */
+#about{
+    padding: 15px 0;
+}
+#about .container h1{
+    font-size: 55px;
+    width: 80%;  
+}
+
+#about .container p{
+    font-size: 20px;
+    width: 94%;
+    margin: 20px auto;
+}
+/* end about css */
+/* start clients review  */
+#clients .container h1 {
+   margin-bottom: 100px;
+}
+#clients .container div h2 {
+   margin: 0;
+}
+#clients .container div span{
+margin: 10px 0;
+}
+#clients .container div p{
+    width: 62%;
+}
+
+/* end clients review  */
+
+/* start contact css */
+
+#contact .container{
+   display: flex;
+   flex-wrap: wrap;
+
+}
+#contact .container iframe{
+    width: 47%;
+    margin: auto;
+}
+/* end  contact css */
+
+/* start footer */
+footer .container{
+    display: flex;
+    padding: 20px;
+}
+footer .container div p{
+    width:279px ;
+}
+/* end footer */
+}
+ /*  Medium devices (tablets, 768px and up) */
+@media (max-width: 877px) { 
+    .container{
+        max-width:600px;
+        margin: auto;
+        overflow: hidden;
+       
+    }
+   
+    /* start navbar css */
+    nav .container{
+        padding: 10px ;
+        display: grid;
+        grid-template-columns: 54% 28% 0%;
+        column-gap: 50px;
+        
+    }
+    nav .container ul{
+        list-style: none;
+        display: flex;
+        column-gap: 25px;
+        font-size: 21px;
+        margin: 39px 0 0 0;
+        overflow: hidden;
+        display: none;
+    }
+    nav .container ul a{
+        text-decoration: none;
+        color: black;
+    }
+   
+    nav .container div i{
+        display: block;  
+        margin: 47px 0 0 140px;
+        font-size: 20px;
+    }
+    /* start ads button */
+    .button {
+       display: none;
+    }
+    .button a:hover{
+         color: black;
+    }
+    /*end  ads button */
+    /* end navbar css */
+    /* start banner section  css*/
+    .banner{
+        overflow: hidden;
+    }
+    .banner .container h1{
+        font-size: 35px;
+    }
+    .banner .container p{
+        font-size: 17px;
+        width: 90%;
+        margin: auto;
+}
+    
+    .banner .container button{
+       font-size: 20px;
+       margin:20px auto 50px;
+    }
+    /* end banner section css */
+    /* Start search box css */
+    .search_box {
+       position: relative;
+       top:-100px;
+   }
+    .search_box .container{
+       width: 575px;
+       height: auto;
+       padding: 40px 30px;
+    }
+    .search_box input[type="text"]{
+       margin-bottom: 15px;
+       width: 104px;
+       font-size: 15px;
+      
+    }
+    .search_box input[type="button"]{
+        width:100px;
+    }
+    .search_box ul{
+        display:none;
+   
+    }
+
+    /* end search box css */
+   
+    /* start browse ads css  */
+    #browse_ads .container h1,.stores .container h1, #clients .container h1{
+        font-size: 40px;
+    }
+    #browse_ads .container .ads div img[alt="product"]{
+        width:auto;
+    }
+    #browse_ads .container .ads div .promoted{
+        padding: 8px 55px;
+    }
+
+    /* end browse ads css  */
+   
+    /* start popular stores css */
+    .stores .container h1{
+        margin: 30px 10px;
+    }
+    .stores .container .details {
+       margin: 15px;
+       width: auto;
+    }
+   .stores .container .details img{
+      width:100%;
+   }
+   
+   .stores .container .details h2{
+       font-weight: 500;
+       margin-bottom: 5px;
+       font-size: 40px;
+   }
+   .stores .container .details p{
+       font-size: 17px;
+       width: 465px;
+   }
+   .stores .container .details button{
+    padding: 5px 50px;
+}
+  /* end popular stores css */
+   
+    /* start about css */
+    #about{
+        padding: 15px 0;
+    }
+    #about .container h1{
+       margin: auto;
+       font-size: 45px;  
+       width: auto;  
+    }
+    
+    #about .container p{
+        font-size: 17px;
+        width: 444px;
+        margin:20px auto;
+    }
+
+    /* end about css */
+    /* start clients review  */
+    #clients .container h1 {
+       margin-bottom: 100px;
+    }
+    #clients .container div h2 {
+       margin: 0;
+    }
+    #clients .container div span{
+    margin: 10px 0;
+    }
+    #clients .container div p{
+        width: 90%;
+        font-size: 17px;
+    }
+
+    /* end clients review  */
+   
+    /* start contact css */
+
+   #contact .container{
+       display: flex;
+       flex-wrap: wrap;
+    
+   }
+   #contact .container form input,#contact .container form textarea{
+       width: 600px;
+       margin:25px;
+
+   }
+   #contact .container iframe{
+       width: 100%;
+       margin: auto;
+   }
+    /* end  contact css */
+   
+    /* start footer */
+    footer .container{
+        display: flex;
+        padding: 20px;
+    }
+    footer .container div p{
+        width:279px ;
+    }
+    /* end footer */
+   
+}
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 638px) { 
+    .container{
+        max-width:485px;
+        margin: auto;
+        overflow: hidden;
+       
+    }
+   
+    /* start navbar css */
+    nav .container{
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns:43% 5% 0%;
+      column-gap: 30px;
+        
+    }
+    nav .container ul{
+        list-style: none;
+        display: flex;
+        column-gap: 25px;
+        font-size: 21px;
+        margin: 39px 0 0 0;
+        overflow: hidden;
+        display: none;
+    }
+    nav .container ul a{
+        text-decoration: none;
+        color: black;
+    }
+   
+    nav .container div i{
+        display: block;  
+        margin: 47px 0 0 140px;
+        font-size: 20px;
+    }
+    /* start ads button */
+    .button {
+       display: none;
+    }
+    .button a:hover{
+         color: black;
+    }
+    /*end  ads button */
+    /* end navbar css */
+    /* start banner section  css*/
+    .banner{
+        overflow: hidden;
+    }
+    .banner .container h1{
+        font-size: 25px;
+    }
+    .banner .container p{
+        font-size: 12px;
+    }
+    .banner .container button{
+       font-size: 20px;
+       margin:20px auto 50px;
+    }
+    /* end banner section css */
+    /* Start search box css */
+    .search_box {
+       position: relative;
+       top:-125px;
+    }
+    .search_box .container{
+       width: 455px;
+       height: auto;;
+    }
+    .search_box input[type="text"]{
+       margin-bottom: 15px;
+       width: 100%;
+    }
+    .search_box input[type="button"]{
+       width: 100%;
+    }
+    .search_box ul{
+        display:none;
+   
+    }
+
+    /* end search box css */
+   
+    /* start browse ads css  */
+    #browse_ads .container h1,.stores .container h1, #clients .container h1{
+        font-size: 30px;
+    }
+
+     #browse_ads .container .ads div{
+         text-align: center;
+         width: 100%;
+     }
+     #browse_ads .container .ads div img[alt="product"]{
+        width:85%;
+     }
+     #browse_ads .container .ads div .promoted{
+         padding: 8px 130px;
+     }
+     #browse_ads .container .ads div img[alt="eye"]{
+         margin: 4px 0;
+     }
+     #browse_ads .container .ads div span{
+         margin: -20px 10px;
+     }
+     #browse_ads .container .ads div button:last-of-type{
+         padding: 2px 100px;
+     }
+    /* end browse ads css  */
+   
+    /* start popular stores css */
+    .stores .container h1{
+        margin: 30px 10px;
+    }
+    .stores .container .details {
+       margin: 15px;
+       width: auto;
+    }
+   .stores .container .details img{
+      width:100%;
+   }
+   
+   .stores .container .details h2{
+       font-weight: 500;
+       margin-bottom: 5px;
+   }
+   .stores .container .details p{
+       font-size: 14px;
+   }
+   .stores .container .details button{
+    padding: 5px 50px;
+    }
+   button:hover{
+       color:black;
+   }
+    /* end popular stores css */
+   
+    /* start about css */
+    #about{
+        padding: 15px 0;
+    }
+    #about .container h1{
+        border-bottom: 4px solid rgb(35, 204, 35);
+        width: 60%; 
+       margin: auto;
+       font-size: 23px;    
+    }
+    
+    #about .container p{
+        font-size: 16px;
+        width: 400px;
+        margin:20px auto;
+    }
+
+    /* end about css */
+    /* start clients review  */
+    #clients .container h1 {
+       margin-bottom: 100px;
+    }
+    #clients .container div h2 {
+       margin: 0;
+    }
+    #clients .container div span{
+    margin: 10px 0;
+    }
+    #clients .container div p{
+        width: 90%;
+        font-size: 15.5px;
+    }
+
+    /* end clients review  */
+   
+    /* start contact css */
+   #contact{
+       background-color: black;
+       padding:50px 0;
+   }
+   #contact .container{
+       display: flex;
+       flex-wrap: wrap;
+    
+   }
+   #contact .container form input,#contact .container form textarea{
+       width: 435px;
+       margin:25px;
+
+   }
+   #contact .container iframe{
+       width: 90%;
+       margin: auto;
+   }
+    /* end  contact css */
+   
+    /* start footer */
+    footer .container{
+        display: flex;
+        padding: 20px;
+    }
+    footer .container div input{
+        width: 440px;
+    }
+    footer .container div button{
+        padding:5px 80px;
+   
+    }
+    .copy-right{
+        font-size: 15px;
+    }
+
+    /* end footer */
+   
+}
